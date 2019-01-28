@@ -1,8 +1,8 @@
 {
-  "name": "assignment2",
+  "name": "se373",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "assignment2",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/BColantonio/SE373/issues"
   },
-  "homepage": "https://github.com/BColantonio/SE373#readme",
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "homepage": "https://github.com/BColantonio/SE373#readme"
 }
