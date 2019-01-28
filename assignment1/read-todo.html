@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript">
+            fetch("todo.json")
+            .then(function(response) {              
+                  return response.json()               
+            })
+            .then(function(json) { 
+           
+                var result ='';
+                for(let i in json)
+                {
+                     for(let item in json[i])
+                    {
+                    result += `<p>${item}:${json[i][item]}</p>`
+                    }
+              }
+                document.querySelector("body").innerHTML = result;
+            })           
+        </script>
+    </body>
+</html>

@@ -18,7 +18,11 @@ const requestListener = (req, res) => {
             case "todo":
             case "todo.json":
                 fileName = "todo.json"
-                break;        
+                break;
+            case "read-todo":
+            case "read-todo.html":
+                fileName = "read-todo.html"
+                break;         
         }    
         return fileName;
     }
@@ -27,14 +31,14 @@ const requestListener = (req, res) => {
             default:
             case "index":
             case "index.html":
-                fileName = "index.html"
                 contentType = "'Content-Type': 'text/html'"
                 break;
             case "todo":
             case "todo.json":
-                fileName = "todo.json"
+            case "read-todo":
+            case "read-todo.html": 
                 contentType = "'Content-Type': 'application/json'";
-                break;        
+                break;     
         }    
         return contentType;
     }
