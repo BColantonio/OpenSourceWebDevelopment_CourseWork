@@ -8,7 +8,7 @@ block content
         h1.display-4.m-b-2 Sign Up
 
         // register form
-        form(method='POST' action='/submit')
+        form(method='POST' action='./results')
           div.form-group
             label(for='name') Name:
             input#name.form-control(type='text', placeholder='first and last' name='name')
@@ -19,7 +19,8 @@ block content
             label(for='comments') Comments:
             textarea#comments.form-control(type='text', placeholder='comments' name='comments')
           button.btn.btn-primary(type='submit') Sign up
-  a(href='./index') index
+      qs
+  a(href='./') index
   br
   a(href='./about') about
   br
