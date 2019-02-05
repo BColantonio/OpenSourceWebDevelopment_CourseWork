@@ -8,16 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-hbs.registerHelper('ptag',(num, message)=>{
-  var msg = '';
-  for(let i=0; i<num; i++)
-  {
-      msg+=`<p>${message}</p>`;
-  }
-
-  return msg;
-});
-
 hbs.registerHelper('opt',()=>{
   var val = [3,4,5,10,20];
   var ret = "<select>";
@@ -28,4 +18,5 @@ hbs.registerHelper('opt',()=>{
   ret+="</select>"
   return ret;
 });
+
 module.exports = router;
