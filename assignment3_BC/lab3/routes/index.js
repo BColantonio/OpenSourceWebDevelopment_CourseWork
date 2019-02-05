@@ -5,7 +5,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'LAB 3-1' });
 });
 
 router.post('/result', function(req, res, next) {
