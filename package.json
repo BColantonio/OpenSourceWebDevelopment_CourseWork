@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BColantonio/SE373/issues"
   },
-  "homepage": "https://github.com/BColantonio/SE373#readme"
+  "homepage": "https://github.com/BColantonio/SE373#readme",
+  "dependencies": {
+    "hbs": "^4.0.2"
+  }
 }
