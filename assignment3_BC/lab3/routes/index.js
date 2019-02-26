@@ -50,12 +50,6 @@ hbs.registerHelper('grd',(x)=>{
   }
 });
 
-hbs.registerHelper('error404',(x)=>{
-  // generate random set of 20 to 50 div's with the text '404'
 
-  // each one generated should have a random class of either 'still' 'rotate' or 'shrink'
-
-  //this should generate animated '404's when the user tries to navigate to a page that does not exist
-});
 
 module.exports = router;
