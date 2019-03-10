@@ -1,0 +1,30 @@
+<h3><a class="btn btn-secondary" href="/employee"><i class="fa fa-plus"></i> Create New</a> Employee List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>department</th>
+            <th>startDate</th>
+            <th>JobTitle</th>
+            <th>salary</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.firstName}}</td>
+            <td>{{this.lastName}}</td>
+            <td>{{this.department}}</td>
+            <td>{{this.startDate}}</td>
+             <td>{{this.JobTitle}}</td>
+            <td>{{this.salary}}</td>
+            <td>
+                <a href="/employee/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/employee/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

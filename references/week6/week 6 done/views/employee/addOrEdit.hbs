@@ -1,0 +1,58 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/employee" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{employee._id}}">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="firstName" placeholder="First Name" value="{{employee.firstName}}">
+        <div class="text-danger">
+            </div>
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="lastName" placeholder="Last name" value="{{employee.lastName}}">
+        <div class="text-danger">
+            </div>
+    </div>
+
+        <div class="form-group">
+ <label>Department</label>
+<select type="text" class="form-control" name="department" placeholder="Department" value="{{employee.department}}">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+        <div class="text-danger">
+            </div>
+    
+
+        </div>
+    <div class="form-group">
+        <label>startDate</label>
+        <input type="date" name="startDate"  class="form-control"  min="2018-01-01" value="{{employee.lastName}}">
+        <div class="text-danger">
+            </div>
+    </div>
+
+       <div class="form-group">
+        <label>JobTitle</label>
+        <input type="text" class="form-control" name="JobTitle" placeholder="JobTitle" value="{{employee.JobTitle}}">
+        <div class="text-danger">
+            </div>
+    </div>
+
+        <div class="form-group">
+        <label>Salary</label>
+        <input type="numbers" class="form-control" name="salary" placeholder="salary" value="{{employee.salary}}">
+        <div class="text-danger">
+            </div>
+    </div>
+
+
+   
+    <div class="form-group">
+        <button type="submit" class="form-control"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/employee/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+    </div>
+</form>
