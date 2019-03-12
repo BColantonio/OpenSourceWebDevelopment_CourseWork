@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/BColantonio/SE373#readme",
   "dependencies": {
-    "hbs": "^4.0.2"
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "hbs": "^4.0.2",
+    "mongoose": "^5.4.18"
   }
 }

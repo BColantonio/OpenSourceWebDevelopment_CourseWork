@@ -9,14 +9,14 @@ var employeeSchema = new mongoose.Schema({
         type: String,
      
     },
-    department: {
+    deptartment: {
         type: String,
      
     },
     startDate: {
         type: Date
     },
-    JobTitle: {
+    jobTitle: {
         type: String
     },
     salary: {

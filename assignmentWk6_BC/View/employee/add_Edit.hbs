@@ -1,0 +1,49 @@
+<h2>{{view}}</h2>
+
+<form action= '/employee' method='POST'>
+    <input type='hidden' name= 'id' value='{{employee.id}}'>    
+    <div class='form-group'>
+        <label>First Name:</label>
+        <input type='text' class='form-control' name='firstName' placeholder="First Name" value='{{employee.firstName}}'> 
+        <div class='text-danger'></div>
+    </div>
+
+    <div class='form-group'>
+        <label>Last Name</label>
+        <input type='text' class='form-control' name='lastName' placeholder="Last Name" value='{{employee.lastName}}'>
+        <div class='text-danger'></div>
+    </div>
+
+    <div class='formgroup'>
+        <label>Department</label>
+        <select type='text' class='form-control' name='department' placeholder="Department" value='{{employee.department}}'>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+        </select>
+            <div class='text-danger'></div>
+    </div>
+
+    <div class='formg-group'>
+        <label>Start Date</label>
+        <input type='date' name='startDate' class='form-control' min='2018-01-01' value='{{employee.lastName}}'>
+        <div class='text-danger'></div>
+    </div>
+
+    <div class='form-group'>
+        <label>Job Title</label>
+        <input type='text' class='form-control' name='jobTitle' placeholder='Job Title' value='{{employee.jobTitle}}'>
+        <div class='text-danger'></div>
+    </div>
+
+    <div class='form-group'>
+        <label>Salary</label>
+        <input type='numbers' class='form-control' name='salary' placeholder='Salary' value='{{employee.salary}}'>
+        <div class='text-danger'></div>        
+    </div>
+
+    <div class='form-group'>
+        <button type='submit' class='form-control'><i class='database'></i>Submit</button>
+        <a class='backup' href='/employee/list'<i class='altList'></i>View All</a>
+    </div>
+</form>
